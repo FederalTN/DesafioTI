@@ -13,7 +13,6 @@ Proyecto backend simple utilizando ExpressJS con TypeScript, implementando el pa
 sudo apt update
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
 sudo apt install -y nodejs
-sudo apt install -y npm
 ```
 Comprobamos si se instalaron correctamente:
 
