@@ -29,11 +29,12 @@ export function validate_request(req: Request, res: Response, next: NextFunction
     });
   }
 
-  if (typeof service !== 'string') {
+  if (typeof service !== 'string' || service.trim().length === 0) {
     return res.status(400).json({
-      error: 'El campo service debe ser un string.'
+      error: 'El campo service no puede estar vacío ni contener solo espacios.'
     });
   }
+  
 
   // Verificar si son metodos validos (ejemplo, si se espera: FLOW o TRANSBANK)
   const valid_methods = ['FLOW', 'TRANSBANK'];
