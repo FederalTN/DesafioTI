@@ -57,16 +57,16 @@ Alternativamente por defecto se ejecutara en el puerto 3000
 
 
 ### 4. Ejecutar el Proyecto
-
+Compilamos y iniciamos el servidor
 ```bash
-npm run build  # Compilar TypeScript
-npm run start  # Iniciar servidor
+npm run build
+npm run start
 ```
 
-O ejecutar directamente sin compilar (dev):
+O ejecutar directamente sin compilar (utilizando TypeScript Node Dev):
 
 ```bash
-npm run dev  # TypeScript Node Dev
+npm run dev
 ```
 
 ### 5. Verificar API
@@ -74,7 +74,7 @@ Una vez se este ejecutando el servidor con el mensaje (por ejemplo utilizando el
 
 "Servidor corriendo en http://localhost:3000"
 
-Puedes realizar una solicitud POST a http://localhost:3000/pay con el siguiente cuerpo (en Postman o similar):
+Puedes realizar una solicitud POST a http://localhost:3000/pay con el siguiente cuerpo (utilizando Postman o similar):
 
 ```
 {
@@ -84,7 +84,7 @@ Puedes realizar una solicitud POST a http://localhost:3000/pay con el siguiente 
 }
 ```
 
-Alternativamente si se dispone de curl se puede utilizar:
+Alternativamente si se dispone de curl instalado en nuestro sistema se puede utilizar:
 
 ```
 curl -X POST http://localhost:3000/pay -H "Content-Type: application/json" -d '{"payment_method": "FLOW", "amount": 100, "service": "streaming"}'
