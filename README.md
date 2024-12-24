@@ -45,6 +45,8 @@ cd DesafioTI
 
 ### 2. Instalar Dependencias
 
+En el directorio del proyecto utilizar:
+
 ```bash
 npm install
 ```
