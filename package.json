@@ -8,6 +8,7 @@
     "@types/express": "^4.17.13",
     "@types/node": "^22.10.2",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
   },
   "name": "desafioti",
@@ -17,7 +18,7 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "build": "tsc",
-    "dev": "ts-node-dev --respawn src/app.ts",
+    "dev": "ts-node-dev src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
