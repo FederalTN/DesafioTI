@@ -93,6 +93,11 @@ Alternativamente si se dispone de curl instalado en nuestro sistema se puede uti
 curl -X POST http://localhost:3000/pay -H "Content-Type: application/json" -d '{"payment_method": "FLOW", "amount": 100, "service": "streaming"}'
 ```
 
+Si no se tiene curl instalado se puede instalar con:
+```bash
+sudo apt install curl
+```
+
 ### 6. Detener el servidor
 Detener el servidor en la terminal que se ejecuta
 ```
