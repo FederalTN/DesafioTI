@@ -1,5 +1,6 @@
 import { payment_processor } from '../payment_processor.interface';
 
+// Pagos con Transbank
 export class transbank_payment implements payment_processor {
   async process_payment(amount: number, service: string): Promise<string> {
     // Simulamos una API o SDK de Transbank con asincronía....

@@ -35,13 +35,15 @@ export function validate_request(req: Request, res: Response, next: NextFunction
     });
   }
 
-  // Verificar si son valores coherentes (ejemplo, si se espera: FLOW o TRANSBANK)
+  // Verificar si son metodos validos (ejemplo, si se espera: FLOW o TRANSBANK)
   const valid_methods = ['FLOW', 'TRANSBANK'];
   if (!valid_methods.includes(payment_method.toUpperCase())) {
     return res.status(400).json({
       error: `El método de pago ${payment_method} no es válido.`
     });
   }
+  
+  console.log("body validado");
 
   next();
 }
